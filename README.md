@@ -19,8 +19,3 @@ pendant chaque période de travail et de repos.
 période d'entraînement et de repos.
 - Gestion des Interruptions : Gérer les interruptions de manière à ce que le minuteur puisse être
 mis en pause ou réinitialisé en cas de besoin. (Optionnel)
-
-## Livraison :
-Le projet sera livré sous la forme d'un script Python exécutable, accompagné d'un guide
-d'utilisation détaillé expliquant comment installer et utiliser le minuteur d'intervalles
-personnalisable.
