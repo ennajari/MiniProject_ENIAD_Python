@@ -82,5 +82,4 @@ tree = ttk.Treeview(root, columns=("Cycle", "Durée"), show="headings")
 tree.heading("Cycle", text="Cycle", anchor=tk.CENTER)
 tree.heading("Durée", text="Durée (s)", anchor=tk.CENTER)
 tree.pack(pady=20)
-
 root.mainloop()
