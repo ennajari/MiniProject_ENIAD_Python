@@ -1,4 +1,4 @@
-# MiniProject_ENIAD_Python
+# MiniProject_ENIAD en Python
 
 ## Titre du Projet : Minuteur d'Intervalles pour Entraînements Personnalisable en Python
 
