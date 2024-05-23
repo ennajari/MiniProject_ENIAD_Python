@@ -12,7 +12,6 @@ class IntervalTimer:
         self.rest_time_series = rest_time_series
         self.is_paused = False
         self.is_stopped = False
-
     def start_timer(self):
         for series in range(self.num_series):
             if self.is_stopped:
