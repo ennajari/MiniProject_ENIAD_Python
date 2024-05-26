@@ -1,6 +1,7 @@
 import time
 import threading
 from playsound import playsound
+
 def play_sound(file_path):
     playsound(file_path)
 class IntervalTimer:
