@@ -42,7 +42,6 @@ def demarrer_minuteur():
 
     for i, (cycle, duree) in enumerate(historique):
         tree.insert("", "end", values=(cycle, duree))
-
 root = tk.Tk()
 root.title("Minuteur d'Intervalles ")
 root.geometry("900x700")
