@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 import tkinter as tk
 from tkinter import ttk
-import winsound
+import pygame.mixer
+import time
+
+pygame.mixer.init()
+
+def beep(frequency, duration):
+    pygame.mixer.Sound(frequency).play()
+    time.sleep(duration / 1000.0)
 
 historique = []
 
@@ -10,12 +17,12 @@ def demarrer_minuteur(nb_cycles, secondes_exercice, secondes_repos, cycle=0):
         # Exercice
         etiquette_minuteur.config(text="Exercice", fg="blue")
         root.update()
-        winsound.Beep(3500, 1000)
+        beep(3500, 1000)
         for exercice in range(secondes_exercice, 0, -1):
             etiquette_minuteur.config(text="Exercice: {}s".format(exercice), fg="green")
             root.update()
             root.after(1000)
-        winsound.Beep(3500, 500)
+        beep(3500, 500)
 
         historique.append(("Cycle {}".format(cycle + 1), secondes_exercice))
 
@@ -23,12 +30,12 @@ def demarrer_minuteur(nb_cycles, secondes_exercice, secondes_repos, cycle=0):
         if cycle < nb_cycles - 1:
             etiquette_minuteur.config(text="Repos", fg="red")
             root.update()
-            winsound.Beep(3500, 1000)
+            beep(3500, 1000)
             for repos in range(secondes_repos, 0, -1):
                 etiquette_minuteur.config(text="Repos: {}s".format(repos), fg="red")
                 root.update()
                 root.after(1000)
-            winsound.Beep(3500, 500)
+            beep(3500, 500)
 
             historique.append(("Repos", secondes_repos))
 
@@ -98,9 +105,3 @@ tree.heading("Durée", text="Durée (s)", anchor=tk.CENTER)
 tree.pack(pady=20)
 
 root.mainloop()
-
-
-
-
-git config --global user.email "abdellahennajari2018@gmail.com"
-git config --global user.name "ennajari"
