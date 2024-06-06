@@ -98,3 +98,9 @@ tree.heading("Durée", text="Durée (s)", anchor=tk.CENTER)
 tree.pack(pady=20)
 
 root.mainloop()
+
+
+
+
+git config --global user.email "abdellahennajari2018@gmail.com"
+git config --global user.name "ennajari"
