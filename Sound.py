@@ -1,7 +1,6 @@
 import numpy as np
 import pygame
 import pygame.sndarray
-
 def generate_sound(frequency, duration):
     sample_rate = 44100
     time_points = np.linspace(0, duration, int(sample_rate * duration), endpoint=False)
