@@ -7,7 +7,6 @@ def generate_sound(frequency, duration):
     signal = np.sin(2 * np.pi * frequency * time_points)
     normalized_signal = np.int16(signal * 32767)  # Convertir le signal en entiers 16 bits
     return pygame.sndarray.make_sound(normalized_signal.reshape(-1, 1))
-
 def main():
     pygame.init()
     frequency = 440  # Fréquence du son en Hz
