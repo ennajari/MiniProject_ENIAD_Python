@@ -5,7 +5,7 @@ from playsound import playsound
 
 def play_sound(file_path):
     playsound(file_path)
- 
+
 class IntervalTimer:
     def __init__(self, num_series, num_exercises, work_time, rest_time_exercise, rest_time_series):
         self.num_series = num_series
